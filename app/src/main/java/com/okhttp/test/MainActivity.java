@@ -3,6 +3,7 @@ package com.okhttp.test;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -16,16 +17,20 @@ import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView tv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        tv = (TextView) findViewById(R.id.tv);
         // 同步请求
         // getDatasync();
         // 异步请求
         asyRequest();
     }
 
+    // 异步请求
     private void asyRequest() {
         // 1 创建OkHttpClient客户端类
         OkHttpClient client = new OkHttpClient.Builder()

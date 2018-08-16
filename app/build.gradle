@@ -35,8 +35,8 @@ dependencies {
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
 
-    //网络依赖
+    //网络依赖 https://github.com/square/okhttp
     compile 'com.squareup.okio:okio:1.15.0'
-    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.squareup.okhttp3:okhttp:3.11.0'
 
 }
